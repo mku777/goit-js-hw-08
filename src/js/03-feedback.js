@@ -25,7 +25,8 @@ function dataFromLocalStorage() {
     email.value = parsedData.email;
     message.value = parsedData.message;
   }
-};
+}
+
 dataFromLocalStorage();
 form.addEventListener('input', throttle(onFormData, 500));
 form.addEventListener('submit', onSubmitForm);
