@@ -10,8 +10,8 @@ function onFormData(event) {
 }
 
 function onFormSubmit(event) {
-  const parsedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
   event.preventDefault();
+  const parsedData = JSON.parse(localStorage.getItem(STORAGE_KEY));
   console.log(parsedData);
   event.currentTarget.reset();
   localStorage.removeItem(STORAGE_KEY);
