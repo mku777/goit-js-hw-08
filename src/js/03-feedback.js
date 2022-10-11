@@ -22,8 +22,9 @@ function dataFromLocalStorage() {
   const email = document.querySelector('.feedback-form input');
   const message = document.querySelector('.feedback-form textarea');
   if (parsedData) {
-    email.value = parsedData.value;
-    message.value = parsedData.value;
+    email.value = parsedData.email; 
+    message.value = parsedData.message;
+      
   }
 }
 
